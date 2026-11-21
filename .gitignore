@@ -1,0 +1,6 @@
+.DS_Store
+applet/
+application.*/
+*.class
+!data/*.jpg
+!data/*.JPG
