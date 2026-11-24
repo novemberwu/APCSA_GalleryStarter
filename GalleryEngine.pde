@@ -37,6 +37,7 @@ class GalleryEngine {
   private String toastMessage = "";
   private int toastTimer = 0;
   private GalleryLight activeRoomLight = new GalleryLight();
+  private PImage underConstructionSignTex;
 
   public GalleryEngine(PApplet app) {
     this.app = app;
@@ -294,6 +295,69 @@ class GalleryEngine {
     rotateY(QUARTER_PI);
     box(42, 1.5f, 42);
     popMatrix();
+  }
+
+  public void drawUnderConstructionSign(String headline, String subtitle) {
+    if (this.underConstructionSignTex == null) {
+      PGraphics pg = app.createGraphics(640, 280);
+      pg.beginDraw();
+      pg.background(32, 30, 28);
+      pg.stroke(214, 174, 72);
+      pg.strokeWeight(8);
+      pg.noFill();
+      pg.rect(10, 10, 620, 260, 8);
+      pg.noStroke();
+      pg.fill(214, 168, 52);
+      for (int x = 22; x < 610; x += 42) {
+        pg.rect(x, 22, 22, 10);
+        pg.rect(x, 248, 22, 10);
+      }
+      pg.textFont(this.uiFont);
+      pg.textAlign(CENTER, CENTER);
+      pg.fill(250, 224, 138);
+      pg.textSize(34);
+      pg.text(headline, 320, 118);
+      pg.fill(214, 208, 196);
+      pg.textSize(18);
+      pg.text(subtitle, 320, 184);
+      pg.endDraw();
+      this.underConstructionSignTex = pg.get();
+    }
+
+    float floorY = 130.0f;
+    noStroke();
+
+    fill(92, 96, 102);
+    pushMatrix();
+    translate(0, floorY - 7, 0);
+    box(210, 14, 64);
+    popMatrix();
+
+    fill(74, 58, 34);
+    pushMatrix();
+    translate(-84, floorY - 75, 0);
+    box(10, 136, 10);
+    popMatrix();
+
+    pushMatrix();
+    translate(84, floorY - 75, 0);
+    box(10, 136, 10);
+    popMatrix();
+
+    fill(64, 48, 26);
+    pushMatrix();
+    translate(0, floorY - 128, 0);
+    box(248, 116, 10);
+    popMatrix();
+
+    fill(204, 168, 76);
+    pushMatrix();
+    translate(0, floorY - 128, 0);
+    box(240, 108, 12);
+    popMatrix();
+
+    drawTexturedQuad(this.underConstructionSignTex, 0, floorY - 128, 6.8f, 232, 100, 0);
+    drawTexturedQuad(this.underConstructionSignTex, 0, floorY - 128, -6.8f, 232, 100, PI);
   }
 
   public void drawDoorwayArchOnWall(String wallSide, PImage lintelSign) {
