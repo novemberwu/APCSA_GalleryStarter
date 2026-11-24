@@ -8,7 +8,7 @@
 //   OR built-in Renaissance marble styles ("VENUS_MARBLE", "MEDICI_BUST", "URN").
 // - Supports pedestal types: "BLOCK", "ROTATING" (twisted column), or "COLUMN".
 // - Includes collidesWithVisitor(nextX, nextZ) so visitors cannot walk through
-//   the pedestal, and isVisitorNear(camX, camZ) to show the AP Art History HUD!
+//   the pedestal, and isVisitorNear(camX, camZ) to show the AP 2D Art HUD!
 // ============================================================================
 
 class Statue {
@@ -22,8 +22,8 @@ class Statue {
   private float z;                  // Floor Z coordinate (room center is 0)
   private float rotatingSpeed;      // Degrees per second (0 = stationary)
   private float collisionRadius;    // Floor collision radius around pedestal
-  private String formAndContent;    // AP Art History: Form & Content
-  private String historicalContext; // AP Art History: Function & Context
+  private String formAndContent;    // AP 2D Art: Form & Content
+  private String historicalContext; // AP 2D Art: Function & Context
 
   private PShape objModel;
   private float modelScale = 45.0f;

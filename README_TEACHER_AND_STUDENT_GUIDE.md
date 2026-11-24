@@ -1,9 +1,9 @@
-# AP CSA (Units 1–3) + AP Art History — Virtual Museum Starter Kit
+# AP CSA (Units 1–3) + AP 2D Art — Virtual Museum Starter Kit
 
 ## 1. Overview & Pedagogical Design
 This Processing (`P3D`) starter project is specifically designed for **AP Computer Science A students who have learned Units 1–3** (**Unit 1:** Primitives, Using Objects, `Math`, `String`; **Unit 2:** Boolean Expressions, `if/else` Selection, and `for`/`while` Loops; **Unit 3:** Class Creation, Constructors, Encapsulation, and Composition) **without requiring Unit 4 (`Array` or `ArrayList`)**.
 
-Each **AP CSA + AP Art History** student pair collaborates to build **one curated gallery room** containing **4 wall paintings, 2 floor statues, and 1 room lighting condition**. The teacher then connects every team's room into a single multi-room museum using the `Doorway` class.
+Each **AP CSA + AP 2D Art** student pair collaborates to build **one curated gallery room** containing **4 wall paintings, 2 floor statues, and 1 room lighting condition**. The teacher then connects every team's room into a single multi-room museum using the `Doorway` class.
 
 ---
 

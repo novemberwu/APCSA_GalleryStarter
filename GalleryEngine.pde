@@ -537,10 +537,11 @@ class GalleryEngine {
     box(78, 5, 78);
     popMatrix();
 
-    // Front brass plaque mounted on the pedestal
+    // Front brass plaque mounted cleanly in front of the pedestal face
     if (statue.getPlaqueImage() != null) {
-      drawTexturedQuad(statue.getPlaqueImage(), 0, floorY - 46, 37.5f, 60, 16, 0);
-      drawTexturedQuad(statue.getPlaqueImage(), 0, floorY - 46, -37.5f, 60, 16, PI);
+      float plaqueZ = "ROTATING".equals(pType) ? 47.5f : 35.5f;
+      drawTexturedQuad(statue.getPlaqueImage(), 0, floorY - 46, plaqueZ, 60, 16, 0);
+      drawTexturedQuad(statue.getPlaqueImage(), 0, floorY - 46, -plaqueZ, 60, 16, PI);
     }
 
     // 2. Draw 3D Sculpture on top of the gilded pedestal plate
@@ -1055,7 +1056,7 @@ class GalleryEngine {
            width * 0.5f, height - 273);
     }
 
-    // 5. Active Statue OR Active Painting AP Art History FFCC Placard
+    // 5. Active Statue OR Active Painting AP 2D Art FFCC Placard
     if (activeStatue != null) {
       drawExhibitCard(
         activeStatue.getPreviewImage(),

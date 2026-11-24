@@ -1,5 +1,5 @@
 // ============================================================================
-// AP CSA (Units 1-3) + AP Art History — Virtual Museum Starter Project
+// AP CSA (Units 1-3) + AP 2D Art — Virtual Museum Starter Project
 // Main Sketch: Teacher Integration, Wall Paintings, 3D Floor Statues & Doorways
 // ============================================================================
 
@@ -22,7 +22,7 @@ void settings() {
 }
 
 void setup() {
-  surface.setTitle("AP CSA & AP Art History — Virtual Gallery Starter (Paintings + 3D Statues)");
+  surface.setTitle("AP CSA & AP 2D Art — Virtual Gallery Starter (Paintings + 3D Statues)");
   println("[APCSA Gallery] Initializing GalleryEngine...");
 
   engine = new GalleryEngine(this);

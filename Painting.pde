@@ -2,9 +2,9 @@
 // Painting.pde — AP CSA Unit 3 (Class Creation) + Unit 1 (Math & String)
 // ============================================================================
 // STUDENT GUIDE:
-// Each Painting object represents one artwork curated by your AP Art History
+// Each Painting object represents one artwork curated by your AP 2D Art
 // partner. It encapsulates the painting's 3D position on the wall, its dimensions,
-// its loaded PImage texture, and its AP Art History FFCC analysis.
+// its loaded PImage texture, and its AP 2D Art FFCC analysis.
 // ============================================================================
 
 class Painting {
@@ -12,8 +12,8 @@ class Painting {
   private String title;
   private String artist;
   private String yearAndMedium;
-  private String formAndContent;     // AP Art History: Form & Content
-  private String historicalContext;  // AP Art History: Function & Context
+  private String formAndContent;     // AP 2D Art: Form & Content
+  private String historicalContext;  // AP 2D Art: Function & Context
 
   // Wall placement & dimensions in 3D space
   private String wallSide;           // "NORTH", "SOUTH", "EAST", or "WEST"

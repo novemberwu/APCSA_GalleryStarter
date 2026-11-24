@@ -33,7 +33,7 @@ class Room2_StudentTemplate {
   // === STUDENT TODO 2 (AP CSA Unit 3: Constructor) ===
   public Room2_StudentTemplate(GalleryEngine engine) {
     this.roomTitle = "Sala II: Botticelli — Sacred Tondi, Portraits & Medici Busts";
-    this.curatorNames = "Curated by: Your Names Here (AP CSA & AP Art History)";
+    this.curatorNames = "Curated by: Your Names Here (AP CSA & AP 2D Art)";
 
     this.roomLight = new GalleryLight(
       "Natural Skylight Daylight",

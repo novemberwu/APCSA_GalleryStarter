@@ -29,7 +29,7 @@ class Room1_Mythology {
   // --- [AP CSA UNIT 3: Class Creation] Constructor ---
   public Room1_Mythology(GalleryEngine engine) {
     this.roomTitle = "Sala I: Botticelli — Myth, Allegory & Classical Sculpture";
-    this.curatorNames = "Curated by: Sample Team A (AP CSA & AP Art History)";
+    this.curatorNames = "Curated by: Sample Team A (AP CSA & AP 2D Art)";
 
     this.roomLight = new GalleryLight(
       "Uffizi Warm Conservation Light",
@@ -98,7 +98,7 @@ class Room1_Mythology {
     );
 
     // 5. Floor Statue #1 (West-North quadrant: x = -210, z = -190)
-    //    Loads "statue.obj" from data/ onto a twisted ROTATING pedestal!
+    //    Loads "statue.obj" from data/ onto a classic square BLOCK pedestal!
     this.westFloorStatue = new Statue(
       engine,
       "Venus de' Medici (Classical Prototype)",
@@ -106,9 +106,9 @@ class Room1_Mythology {
       "1st Century BCE, Parian Marble (statue.obj)",
       "statue.obj",
       -210.0f, -190.0f,
-      "ROTATING",
+      "BLOCK",
       35.0f,
-      "FORM & CONTENT: Life-size marble sculpture depicting Aphrodite in the modest Venus Pudica contrapposto pose. Displayed on a twisted Pietra Serena pedestal rotating at 35 deg/sec.",
+      "FORM & CONTENT: Life-size marble sculpture depicting Aphrodite in the modest Venus Pudica contrapposto pose. Displayed on a classic square Pietra Serena block plinth rotating at 35 deg/sec.",
       "CONTEXT: Ancient Roman copies of this Hellenistic sculpture in the Medici gardens directly inspired Sandro Botticelli's pose for The Birth of Venus on the opposite East wall."
     );
 
